@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Free Guide — 5 Lifestyle Hacks (YOUR_NAME)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">YOUR_NAME</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="lead.html">Free Guide</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container lead-page">
+    <h2>Get the FREE guide: 5 Lifestyle Hacks for More Energy</h2>
+    <p>Practical tips + product suggestions sent to your email and WhatsApp.</p>
+
+    <form id="lead-form" action="FORM_ENDPOINT" method="POST">
+      <!-- Replace FORM_ENDPOINT with Formspree / your endpoint -->
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        WhatsApp number (optional)
+        <input type="tel" name="whatsapp" placeholder="+91xxxxxxxxxx">
+      </label>
+      <input type="hidden" name="referral" id="referral-field" value="">
+      <button class="btn primary" type="submit">Send Me The Guide</button>
+    </form>
+
+    <p class="privacy">We respect your privacy. Your details are used only to send the guide and product tips.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year3"></span> YOUR_NAME — QNet IR</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
